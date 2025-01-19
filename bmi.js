@@ -4,7 +4,7 @@ function calculateBMI(event){
     const weight = Number(document.querySelector('#weight').value)
     const bmi = document.querySelector('.answer')
     bmi.innerHTML = `
-        <p>Your current BMI is ${height/(weight*weight)}</p>
+        <p>Your current BMI is ${weight/(height*height)}</p>
     `
     document.querySelector('#height').value = ' '
     document.querySelector('#weight').value = ' '
